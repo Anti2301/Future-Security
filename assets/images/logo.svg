@@ -1,0 +1,42 @@
+<svg width="200" height="240" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .shield { fill: none; stroke: white; stroke-width: 14; stroke-linejoin: round; stroke-linecap: round; }
+      .letter-f { fill: none; stroke: white; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+      .checkmark { fill: none; stroke: white; stroke-width: 11; stroke-linecap: round; stroke-linejoin: round; }
+      .text-future { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; fill: white; letter-spacing: 1px; }
+      .text-security { font-family: Arial, sans-serif; font-size: 14px; fill: white; opacity: 0.9; letter-spacing: 2px; }
+    </style>
+  </defs>
+  
+  <!-- Shield outer -->
+  <path class="shield" d="M100 15 L175 50 L175 125 C175 170 100 195 100 195 C100 195 25 170 25 125 L25 50 Z"/>
+  
+  <!-- Shield inner divider -->
+  <path class="shield" d="M100 25 L170 55 L170 125 C170 165 100 185 100 185 C100 185 30 165 30 125 L30 55 Z" opacity="0.6"/>
+  
+  <!-- Letter F (left half of shield) -->
+  <g transform="translate(75, 100)">
+    <!-- Vertical stem -->
+    <line x1="0" y1="-40" x2="0" y2="40" class="letter-f"/>
+    <!-- Top bar -->
+    <line x1="0" y1="-40" x2="35" y2="-40" class="letter-f"/>
+    <!-- Middle bar -->
+    <line x1="0" y1="-5" x2="25" y2="-5" class="letter-f"/>
+  </g>
+  
+  <!-- Checkmark (right half of shield) -->
+  <g transform="translate(120, 100)">
+    <!-- Lower left of checkmark -->
+    <line x1="-15" y1="5" x2="5" y2="25" class="checkmark"/>
+    <!-- Upper right of checkmark -->
+    <line x1="5" y1="25" x2="30" y2="-15" class="checkmark"/>
+  </g>
+  
+  <!-- Diagonal accent line (shield division) -->
+  <line x1="100" y1="15" x2="100" y2="195" stroke="white" stroke-width="2" opacity="0.3" stroke-dasharray="5,5"/>
+  
+  <!-- Eslogan -->
+  <text x="100" y="220" text-anchor="middle" class="text-future">Future</text>
+  <text x="100" y="238" text-anchor="middle" class="text-security">Security</text>
+</svg>
